@@ -20,7 +20,7 @@
 }
 
 .red {
-	background-color: #ff0000;
+	background-color: #1a6686ee;
 }
 
 td{
@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6{
 	font-size: .5rem;
   }
   #morecontent {
-	background-color: yellow;
+	background-color: rgb(120, 16, 16);
   }
   <table id="hireButtons">
 
