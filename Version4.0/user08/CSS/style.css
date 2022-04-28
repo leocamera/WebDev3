@@ -1,4 +1,4 @@
-table {
+@import url(rainbow.css); table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
 	margin-left: auto;
@@ -18,7 +18,9 @@ th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
-}.button {
+}
+
+.button {
 	background-color: #4CAF50;
 	border: none;
 	color: white;
@@ -43,7 +45,7 @@ th {
 	background-color: #ff0000;
 }
 
-td{
+td {
 	padding:20px;
 }
 
@@ -71,25 +73,41 @@ h1, h2, h3, h4, h5, h6{
 .button2:hover {
  box-shadow: 0 13px 17px 0 rgba(0, 0, 0, 0.25), 0 18px 51px 0 rgba(0, 0, 0, 0.20);
 }
-.title{
+.title {
 	color: red;
 	font-family: 'Trebuchet MS', sans-serif; 
-  }
-  
-  .title-large {
-	font-size: 2rem;
-  }
-  
-  .title-small {
-	font-size: .5rem;
-  }
-  #morecontent {
-	background-color: yellow;
-  }
-  <table id="hireButtons">
-
-<table id="footerTable">
-*{
-    text-align:right;
-    border: 2px solid black;
 }
+  
+.title-large {
+	font-size: 2rem;
+}
+  
+.title-small {
+	font-size: .5rem;
+}
+  
+#morecontent {
+	background-color: yellow;
+}
+
+#knowledge > * {
+	border: 3px red solid;
+}
+
+p + * {
+	background-color: #FFFF00;
+}
+  
+div li::marker{
+	color: red;
+}
+  
+div li::marker{
+	content:"😜 ";
+}
+  
+td:hover {
+	background-color: black;
+} 
+
+  
