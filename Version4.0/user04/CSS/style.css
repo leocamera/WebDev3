@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -66,7 +67,7 @@
  }
  .title{
 	color: blueviolet;
-	font-family: 'Courier New', monospace; 
+	font-family: 'Trebuchet MS', sans-serif; 
   }
   
   .title-large {
@@ -76,6 +77,3 @@
   .title-small {
 	font-size: .5rem;
   } 
-  *{
-    border-bottom: 0.05px solid mediumvioletred;
-}
