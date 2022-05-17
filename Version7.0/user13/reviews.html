@@ -30,6 +30,9 @@
 
     <style>
         /* Internal Styling Here */
+        img {
+            width: 300px;
+        }
     </style>
 
 </head>
@@ -46,41 +49,26 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="games.html" class="nav-item nav-link">Games</a>
                     <a href="store.html" class="nav-item nav-link" tabindex="-1">Store</a>
-                    <a href="reviews.html" class="nav-item nav-link" tabindex="-1">Reviews</a>
+                    <a href="reviews.html" class="nav-item nav-link active" tabindex="-1">Reviews</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
             </div>
         </nav>
     </div>
-    <!--End NavBar-->
-    <main>
-        <div class="banner container-fluid">
-            <div>
-                <center>
-                    <h1 class="solid">Welcome to the site</h1>
-                </center>
-            </div>
-        </div>
-        <div>
-            <center>
-                <div class="pc">
-                    <h1 class="solid">Our Purpose</h1>
-                    <p class="solid">KK Gaming Cafe is filled with the <strong>latest technology</strong> in
-                        gaming
-                        computers as
-                        well as gaming consoles which you can rent out for a time slot.</p>
-                </div>
-                <div class="cafe">
-                    <p class="solid">If you need a break, there's a cafe
-                        area
-                        where you can relax with a meal and beverage of your choosing from a variety of options. </p>
-                </div>
-            </center>
-        </div>
-    </main>
-</body>
+    <div class="container-fluid">
+        <div class="row">
 
-</html>
+            <div class="col-lg-12" style="background-color: black; border-style: solid; color:lime; margin-top: 25px">
+                <center>
+                    <p> Write a Short Review</p>
+                </center>
+                <input type="input" maxlength="1000" id="userInput" placeholder="Enter text here..."
+                    onkeydown="color('yellow')" onkeyup="color('white'), showMsg()">
+                <p id="userMsg"></p>
+            </div>
+
+        </div>
+    </div>
