@@ -37,7 +37,7 @@ h6 {
 
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #000000;
+	color: #ffffff;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
@@ -56,7 +56,7 @@ tr {
 th {
 	text-align: center;
 	color: #ffffff;
-	background-color: #000000;
+	background-color: #777777;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
