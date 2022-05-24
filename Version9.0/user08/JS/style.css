@@ -1,0 +1,10 @@
+
+
+
+
+(function() {
+
+$('article').append('hello from the javaScript');
+
+})();
+
