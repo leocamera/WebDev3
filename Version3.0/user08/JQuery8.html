@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta chrset+utf-8>
+    <title>Effects</title>
+    <style>
+    Body {
+        width: 600px;
+        margin: auto;
+        font-family: sans-serif;
+}
+
+#contact {
+    background: #e3e3e3;
+    padding: 1em 2em;
+    position: relative;
+}
+
+.js #contact {
+    position: absolute;
+    top: 0;
+    width: inherit;
+    display: none;
+}
+
+#contact h2 { margin-top: 0; }
+
+#contact ul { padding: 0;}
+
+#contact li {
+    list-style: none;
+    margin-bottom: 1em;
+}
+
+/* close button on Form*/
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+ /* Form inputs*/
+ input, textarea { width: 100%; line-height: 2em;}
+ input[type=subit] { width: auto;  }
+ label { display: block; text-align: left; }
+
+  </style>
+ </head>
+</body>
+
+
+<article>
+    <h1> My Awesome Post</h1>
+    <p>
+        Lornen ipsum dolor sit amet amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    </p>
+    <p>
+        Lornen ipsum dolor sit amet amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incidiunt ut labore
+        et dolore magan aliqua. sed do eiusmod tempor incridunt ut labore et dolore magna aliqua.
+        sed do eiusmod tempor incidiunt ut labore et dolore mahna aliqua. sed to eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+    <p>
+        loren ipsum dolor sit amet, conscectetur adipisicing elit, sed do eiused tempor
+        incididunt ut labore et dolor magna aliqua.
+    </p>
+    <p>
+        Lornen ipsum dolor sit amet amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incidiunt ut labore
+        et dolore magan aliqua. sed do eiusmod tempor incridunt ut labore et dolore magna aliqua.
+        sed do eiusmod tempor incidiunt ut labore et dolore mahna aliqua. sed to eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+</article>
+
+<div id="contact">
+    <h1>Contact Me</h1>
+    <form action="#">
+        <ul>
+            <li>
+                <label for="name">Name: </label>
+                <input name="email" id="email">
+            </li>
+            
+            <li>
+                <lable for="comments"> Email address> </lable>
+                <input name="email" id="email">
+            </li>
+            
+            <li>
+                <lable for="comments"> What's Up</lable>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            </li>
+                 <input type="submit" value="submit">
+            </li>
+        </ul>
+    </form>
+</div>
+
+<script scr="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+
+$('html').addClass('js');
+
+var contavForm= {
+    init: function() {
+        $('<button></button>', {
+            text: 'Contact Me'
+        })
+            .insertAfter('article')
+    }
+};
+
+contactForm.init();
+
+})();
+
+</script>
+
+</body>
+</html>

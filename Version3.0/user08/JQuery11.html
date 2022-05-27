@@ -1,0 +1,54 @@
+<!document html>
+<html>
+<head>
+    <meta charset="utd-8">
+    <title>Custom Effect Methods</title>
+    <style>
+    p { margin-top: 0;}
+    </style>
+</head>
+<body>
+
+<h1>Click Me</h1>
+<div class="content">
+    <p>
+        lorem ipusm dolor sit amet, conesctetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolor magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in viluptate velit esse
+        cillum dollore eu fugia nulla pariatur. Excepteur sint occaecat cupidatat
+        non proident, sunt in culpa qui difficia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+        lorem ipusm dolor sit amet, conesctetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolor magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in viluptate velit esse
+        cillum dollore eu fugia nulla pariatur. Excepteur sint occaecat cupidatat
+        non proident, sunt in culpa qui difficia deserunt mollit anim id est laborum.
+    </p>
+</div>
+
+
+
+<script scr="https://ajax.googlrapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script>
+
+jquery.fn.flash = function( speed, easing, callback ) {
+    $(this).slideDown(500, function() {
+        $(this).drlay(2000).slideUp(500);
+    });
+    // return this.animatel( props, speed, easing, callback );
+};
+
+$('div.contact').hide();
+
+$('h1').on('click', function() {
+    $(this).next('div.content').flash();
+})
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>appending content</title>
+  </head>
+  <body>
+    <article>
+      <h1>My Awesome Post</h1>
+      <p>
+        Lornen ipsum dolor sit amet amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua
+      </p>
+      <p>
+        Lornen ipsum dolor sit amet amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua
+      </p>
+    </article>
+
+    <script
+      scr="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+    ></script>
+
+    <script>
+      (function () {
+        $("h1").append("Hello from JavaScript");
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+  <title>Aniamte</title>
+  <style>
+      .box {
+          width: 400px;
+          background:red;
+          padding: 2em;
+          position: relative;
+      }
+
+      </style>
+  </head>
+</body>
+
+
+<div class="box">
+    <h2>some content Here</h2>
+    <p>
+        lorem ipusm dolor sit amet, conesctetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolor magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in viluptate velit esse
+        cillum dollore eu fugia nulla pariatur. Excepteur sint occaecat cupidatat
+        non proident, sunt in culpa qui difficia deserunt mollit anim id est laborum.
+    </p>
+</div>
+
+<p><button>Increase</button></p>
+
+
+<script scr="https://ajax.googlrapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script>
+
+(function() {
+    var box = $('div.box');
+
+    $('button').on('click', function() {
+        box.animate({
+            'fontSize': '+=5',
+            'width': '+=300'
+        }, 500, 'swing', function() {
+            console.log('completed');
+        });
+    })();
+})();
+
+
+</script>
